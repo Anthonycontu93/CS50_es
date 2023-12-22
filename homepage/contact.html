@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- importa librerie css -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="headercss">
+
+        <div class="container-fluid">
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="index.html">Home</a>
+                </li>
+
+
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-success" href="about.html">About</a>
+                </li>
+
+             </ul>
+
+         </div>
+
+    </header>
+
+            <div class="w3-container">
+               <h1>Social's pages</h1>
+
+
+               <button id="Blue">B</button>
+               <button id="Red">R</button>
+               <button id="Violet">V</button>
+               <button id="White">W</button>
+
+
+                <p>Here you can find my personal Social pages. If you'd like to follow or like, thank you in advance for your time.</p>
+            </div>
+
+            <div class="w3-container w3-red">
+                <h2>Facebook</h2>
+                <p>My most used social network and perhaps the one with the most content, here you will find many photos of my adventures.</p>
+                <p><a href="https://www.facebook.com/anthony.contu/" id= "Social">facebook.</a></p>
+            </div>
+
+            <div class="w3-container w3-teal">
+                <h2>Twitter</h2>
+                <p>Twitter is actually my favorite social network. here you will find several of my interests! Come on Elon.</p>
+                <p><a href="https://twitter.com/AnthonyContu" id= "Social">Twitter.</a></p>
+            </div>
+
+            <div class="w3-container w3-yellow">
+                <h2>Instagram</h2>
+                <p>I'm a little big for Instagram, a few photos, ninete of that, big Facebook supporter.</p>
+                <p><a href="https://www.instagram.com/anthonycontu_/" id= "Social">Instagram.</a></p>
+            </div>
+
+            <div class="w3-container w3-gray">
+                <h2>LinkedIn</h2>
+                <p>Here you obviously find my CV, and my work interests.</p>
+                <p><a href="https://www.linkedin.com/in/anthony-contu-49505416a/" id= "Social">LinkedIn.</a></p>
+            </div>
+
+            <script>
+
+                        let body = document.querySelector ('body');
+                        document.querySelector('#Blue').addEventListener('click', function(){body.style.backgroundColor ='powderblue'; });
+
+                        let body1 = document.querySelector ('body');
+                        document.querySelector('#Red').addEventListener('click', function(){body.style.backgroundColor ='tomato'; });
+
+                        let body2 = document.querySelector ('body');
+                        document.querySelector('#Violet').addEventListener('click', function(){body.style.backgroundColor ='violet'; });
+
+                        let body3 = document.querySelector ('body');
+                        document.querySelector('#White').addEventListener('click', function(){body.style.backgroundColor ='white'; });
+
+            </script>
+
+
+
+</body>
+
+            <footer class="footercss">
+                    <p>Copyright &#169; Anthony Contu</p>
+            </footer>
+
+</html>

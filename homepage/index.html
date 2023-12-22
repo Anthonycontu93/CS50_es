@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- è come import in python -->
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- importa librerie css -->
+        <link href="styles.css" rel="stylesheet"> <!-- llink che attacca il file css al file html-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First Blog</title>
+
+    </head>
+    <body>
+        <header class="headercss">
+            <div class="container-fluid">
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="index.html">Home</a>
+                    </li>
+
+
+                    </li>
+                    <li class="ms-auto nav-item">
+                        <a class="btn btn-success" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-danger" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+              <p><span class="multicolortext">Google Images will take you there!</span></p>
+                <form action="https://www.google.com/imghp" method="get"> <!-- get porta il valore nell'url post nasconde-->
+                    <input autocomplete="off" autofocus id="name" placeholder="Visit a City" type="text">
+                    <input type="submit">
+                </form>
+
+          <!-- script è il blocco dove inizia il linguaggio java sempre prima della fine del body-->
+
+          <div>
+
+            <h1></h1>
+
+            <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+
+            <p id="demo"></p>
+
+          </div>
+
+             </p>
+        </header>
+         <main class="maincss" >
+            <h2 title="title">Anthony's journey</h2>
+            <p title="description">I was born in 1993, on November 6th to be exact. In a small town called Castelletto Sopra Ticino. A small country, too small for my dreams. You know, the true beauty of the village and I believe above all of the village in Italy, is life; yes, because life here goes slower, very slowly, people all know each other, one with the other, there are no secrets and no privacy; if someone does something everyone knows, indeed perhaps they know it even before you have done it. </p>
+            <p> <img src="Castelletto-Sopra-Ticino fiume.jpg" class="img" alt="..."> </p>
+             <h5>Flying out</h5>
+                <p>My journey in search of me started in 2013, I had never taken a plane, and I did not know a word of English or other languages. I was on an adventure. So, after a roll of the dice, fate chose the day for us to leave; I forgot, there were two of us, my cousin and I, even looking for himself, or looking for whatever we were looking for. Pack your bags, gentlemen.</p>
+
+            <img src="partenza.jpg" class="img" alt="...">
+            <br>
+            <br>
+            <h5>London, here I am!</h5>
+              <p> Arrived, and like the many stories heard, by others who had already been there, the city welcomed us with a beautiful rain, gray and cloudy sky; the mood was not at its best, but we did not know that from that day on life would change, for the better.  The first days all was very complicated, the language, the money, the hostels, the job search, the loneliness, ah yes, my adventure companion left after almost a month, and I stayed there. The obstinacy to find a path of my own, different, out of the predetermined route, it was really a lot, it is so, I didn’t give up. </p>
+              <p>  The obstinacy to find a path of my own, different, out of the predetermined route, it was really a lot, it is so, I didn’t give up. I do not know how, why or for some strange reason from them shortly I would have lived the most beautiful moments of my life, until now at least.</p>
+            <p>
+            <!-- Carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="briklanecris.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="prof_pub.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="london1_lavoro.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="underground.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <br>
+            <h5>First attempt </h5>
+                  <ul class="nav">
+                      <li class="nav-item">
+                        <p> After several years working in the restaurant, I and two other friends tried to open a small pizzeria in Ibiza. Unfortunately, one of us decided to abandon the ship and so we had to close. It did not go very well as first experience, indeed I would say disastrous, but still we must treasure it. If you click the button you will visit our menu, it was really delicious, even the pizza excellent. <a class="btn btn-warning" href="https://leggimenu.it/menu/los3amigos">Menù</a></p>
+                      </li>
+                  </ul>
+         </main>
+
+         <footer class="footercss">
+                <p>Copyright &#169; Anthony Contu</p>
+                  <h1>Author</h1>
+                    <address>
+                      Written by <a href="anthonycontu74@gmail.com">Anthony Contu</a>.<br>
+                      Visit us at:<br>
+                      https://anthonycontu93-code50-76244869-7v76pxv9g2x6p5-8080.preview.app.github.dev/homepage/index.html<br>
+                      Italy<br>
+                   </address>
+         </footer>
+
+    </body>
+</html>

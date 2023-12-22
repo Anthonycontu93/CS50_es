@@ -1,0 +1,68 @@
+/* file che modifica e controlla testo di header mian footer */
+
+            #Social  /* # fa riferimento all'id che ho assegnato*/
+            {
+                color: #0000ff;
+
+            } /*ID contact*/
+
+            a
+            {
+                text-decoration: none
+            } /*ID contact*/
+
+            a:hover
+            {
+                text-decoration: underline;
+            } /*when the hover goes up a line show up*/
+
+            .headercss
+            {
+                font-size: medium;
+                text-align: center;
+            } /*class header*/
+
+            .maincss
+            {
+                font-size: medium;
+                text-align: left;
+            } /*main proprerties*/
+
+            .footercss
+            {
+                font-size: small;
+                text-align: center
+            }
+
+            .img
+            {
+              width: 100%;
+              height: auto;
+            } /*size imgs*/
+
+            .multicolortext
+            {
+              background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            } /*mutlticolor banner*/
+
+            .w-100
+            {
+              width: 100% !important;
+              height: 120vh;
+            } /*carousel resize*/
+
+      
+
+            address
+            {
+              display: block;
+              font-style: italic;
+            } /*author*/
+
+
+
+

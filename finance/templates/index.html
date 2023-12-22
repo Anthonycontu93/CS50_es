@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+    <h3>WALLET STOCK</h3>
+    <table id= "customers">
+        <tbody>
+        <thead>
+            <tr>
+                <th>SYMBOL</th>
+                <th>QUANTITY</th>
+            </tr>
+        </thead>
+        </tbody>
+        <tbody>
+            {% for stock in wallet %}
+            <tr>
+                <td> {{ stock.symbol }} </td>
+                <td> {{ stock ['SUM (stocks_quantity)'] }} </td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>CURRENT PRICE</h3>
+    <table id= "customers">
+        <thead>
+            <tr>
+                <th>NAME </th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dic in Azioni %}
+            <tr>
+                <td> {{ dic.name }} </td>
+                <td> {{ dic.price }} $ </td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>TOTAL HOLDING STOCK</h3>
+    <table id= "customers">
+        <thead>
+            <tr>
+                <th>AMOUNT IN DOLLAR </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in totale  %}
+            <tr>
+                <td> {{ (stock.name)  }} $ </td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>CASH BALANCE</h3>
+    <table id= "customers">
+        <thead>
+            <tr>
+                <th>BANK ACCOUNT </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ tot }} </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>CASH & STOCK</h3>
+    <table id= "customers">
+        <thead>
+            <tr>
+                <th>TOTAL OWNED </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ cashStock }} </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

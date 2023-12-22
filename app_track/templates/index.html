@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Tracker</title>
+</head>
+<body>
+    <h1>Drive Tracker</h1>
+    <ul>
+        {% for drive in drives %}
+            <li>{{ drive.id }}  {{ drive.date }} {{ drive.driver }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/add_drive" method="post">
+        <label for="driver">Driver Name:</label>
+        <input type="text" id="driver" name="driver" required>
+        <button type="submit">Add Drive</button>
+    </form>
+    <form action="/delete_drive" method="post">
+        <label for="driver">Delete drive:</label>
+        <input type="text" id="id" name="id" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+    <script>
+    var xValues = {{Drivers | safe}};
+    var yValues = {{sum_drive | safe}};
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+
+    new Chart("myChart", {
+      type: "pie",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "Drivers"
+        }
+      }
+    });
+    </script>
+
+
+</body>
+</html>

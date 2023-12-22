@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>MODIFY</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Edit Birthday</h2>
+
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form action="/" method="post">
+                    <input autocomplete="off" autofocus name="month" placeholder="Month" type="text" id="mese">
+                    <input autocomplete="off" autofocus name="day" placeholder="day" type="number" id="giorno">
+                    <button on click="editRow()";>Edit </button>
+                 </form>
+            </div>
+
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for people in entries %}
+                        <tr>
+                            <td>{{ people.name }}</td>
+                            <td>{{ people.month }}/{{ people.day }}</td>
+                            <td>
+                                <form action="/deregister" method="post">
+                                    <input name="id" type="hidden" value="{{ people.id }}">
+                                    <input type="submit" value="Deregister">
+                                </form>
+                            </td>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+
+            // get selected row
+
+            var table = document.getElementId("table"),rIndex;
+
+            for (var i = 1; i < rable.rows.lenght; i++)
+            {
+                table.rows[i].onclick = function ()
+                {
+                    rIndex = this.rowIndex;
+                    console.log(rIndex());
+
+                    document.getElementById("mese").value = this.cells[0].innerHTML;
+                    document.getElementById("giorno").value = this.cells[1].innerHTML;
+
+                };
+            }
+
+            function editRow()
+            {
+                table.rows[rIndex].cells[0].innerHTML = document.getElementById("mese").value;
+                table.rows[rIndex].cells[0].innerHTML = document.getElementById("giorno").value;
+            }
+
+
+        </script>
+    </body>
+</html>
